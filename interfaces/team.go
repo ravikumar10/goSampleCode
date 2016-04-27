@@ -75,8 +75,8 @@ func main() {
 		Person{"Alex", "John", time.Date(1970, time.January, 10, 0, 0, 0, 0, time.UTC), "alex@email.com", "New York"},
 		[]string{"Create Team", "Create Task"},
 	}
-	shiju := User{
-		Person{"ravi", "kumar", time.Date(1979, time.February, 17, 0, 0, 0, 0, time.UTC), "shiju@email.com", "Kochi"},
+	ravi := User{
+		Person{"ravi", "kumar", time.Date(1979, time.February, 17, 0, 0, 0, 0, time.UTC), "sitravi.kumar@gmail.com", "Bangalore"},
 		[]string{"Go", "Docker", "Kubernetes"},
 	}
 	chris := User{
@@ -86,7 +86,7 @@ func main() {
 	team := Team{
 		"Go",
 		"Golang CoE",
-		[]Member{alex, shiju, chris},
+		[]Member{alex, ravi, chris},
 	}
 	//Get details of the Team
 	team.GetTeamDetails()

@@ -72,7 +72,7 @@ func (m Meetup) MeetupPeople(){
 }
 
 func main() {
-	shiju := Speaker{Person{"Ravi", 35,"Delhi" ,"+91-94003372xx"},
+	 Ravi := Speaker{Person{"Ravi", 35,"Delhi" ,"+91-94003372xx"},
 		[]string{"Go","Docker", "Azure","AWS"},
 		[]string{"FOSS","JSFOO","MS TechDays"}}
 	satish := Organizer{Person{"Manish", 35,"Patna" ,"+91-94003372xx"},
@@ -83,7 +83,7 @@ func main() {
 		"Royal Orchid",
 		"Bangalore",
 		time.Date(2015, time.February, 19, 9, 0, 0, 0, time.UTC),
-		[]People{shiju,satish,alex} }
+		[]People{Ravi,satish,alex} }
 	//get details of meetup people
 	meetup.MeetupPeople()
 }

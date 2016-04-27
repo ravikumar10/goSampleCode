@@ -35,9 +35,9 @@ func (d Developer) SayHello() {
 		d.name,d.age,d.platform,d.company)
 }
 func main() {
-	alex := Student{Person{"vishal", 21, "111-222-XXX"}, "SIT","BS CS"}
+	alex := Student{Person{"alex", 21, "111-222-XXX"}, "MIT","BS CS"}
 	john := Developer{Person{"John", 35, "111-222-XXX"}, "Accel North America", "Golang"}
-	jithesh := Developer{Person{"Ravi", 33, "111-222-XXX"}, "Mitel", "Golang"}
+	jithesh := Developer{Person{"Jithesh", 33, "111-222-XXX"}, "Accel North America", "Hadoop"}
 	peopleArr := [...]People{alex, john,jithesh}
 	for n, _ := range peopleArr {
 		peopleArr[n].SayHello()
